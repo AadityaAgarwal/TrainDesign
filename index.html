@@ -5,7 +5,7 @@
   </head>
   <body>
   <a-scene background="color:cyan">
-    <a-camera  position="0 8 20"></a-camera>
+    <a-camera  position="0 5 15"></a-camera>
 
     <!--------------Asset Management-------------->
     <a-assets>
@@ -13,6 +13,7 @@
         <a-asset-item id="fence" src="./fence/scene.gltf"></a-asset-item>
         <a-asset-item id="train-obj" src="./TrainImg/tinker.obj"></a-asset-item>
         <a-asset-item id="train-mtl" src="./TrainImg/obj.mtl"></a-asset-item>
+        <a-asset-item id="wooden-fence" src="./wooden_fence/scene.gltf"></a-asset-item>
     </a-assets>
 
     <!-------------------------------------Circular Plane----------------------------------------------->
@@ -22,7 +23,8 @@
     </a-circle>
 
     <!-----------Images--------->
-    <a-entity gltf-model="#fence"  ></a-entity>
+    <a-entity gltf-model="#wooden-fence" scale="1 0.5 0.5" rotation="0 90 0" width="2" position="11 0 0"></a-entity>
+    <a-entity gltf-model="#wooden-fence" scale="1 0.5 0.5" rotation="0 90 0" width="2" position="-9 0 0"></a-entity>
     <a-entity gltf-model="#train-gltf" position="0 0 0" scale="0.1 0.1 0.1"></a-entity>
   </a-scene>
 </body>
